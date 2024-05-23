@@ -7,6 +7,15 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  public base! : number;
+  public altura! : number;
+  public resultado! : string;
+
   constructor() {}
+
+  public calcularArea() : void{
+    this.resultado = "Área é de " +
+                    (this.base*this.altura) / 2 + " cm².";
+  }
 
 }
