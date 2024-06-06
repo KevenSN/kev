@@ -10,7 +10,11 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },  {
+    path: 'kev',
+    loadChildren: () => import('./kev/kev.module').then( m => m.KevPageModule)
   },
+
 ];
 
 @NgModule({
